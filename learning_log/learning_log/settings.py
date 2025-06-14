@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r!6g#lgu0nh&qw1$nt(votz$rfob!ol#%7p3a*z#^@x%i11^0=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["Learning-log.onrender.com", "localhost"]
 
 
 # Application definition
@@ -120,7 +120,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -141,4 +140,4 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CSRF_TRUSTED_ORIGINS = ['https://*.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://Learning-log.onrender.com']
