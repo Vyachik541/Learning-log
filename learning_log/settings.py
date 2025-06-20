@@ -71,12 +71,8 @@ WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgreswave',
-        'USER': 'vyachik541',
-        'PASSWORD': '352819',
-        'HOST': 'postgresql://vyachik541:gE5pRbag5tD8yRnPczduERqGdQ4UrCRC@dpg-d1alpu3ipnbc73a96410-a.oregon-postgres.render.com/postgreswave',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
